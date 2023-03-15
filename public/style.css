@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(102, 114, 118);
+}
+
+.heading {
+  font-family: "Lobster", sans-serif;
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem;
+  color: rgb(250, 143, 143);
+}
+
+#list-container {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.list-item {
+  border: 0.4rem outset rgb(239, 195, 113);
+  border-radius: 2rem;
+  padding: 1.5rem;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  gap: 2rem;
+}
+
+.field .field-name {
+  font-family: "Chivo", sans-serif;
+  font-size: 1.7rem;
+  color: black;
+  font-weight: 900;
+}
+
+.field .field-content {
+  font-family: "Itim", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: brown;
+}
+
+.list-item .delete-button {
+  min-width: 5rem;
+  height: 5rem;
+  border-radius: 3rem;
+  background-color: whitesmoke;
+  border: 5px solid red;
+  font-size: 2rem;
+  font-weight: 900;
+  color: red;
+  transition: 0.7s;
+}
+
+.list-item .delete-button:hover {
+  background-color: red;
+  color: whitesmoke;
+}
+
+.item-removed {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+@media only screen and (max-width: 900px) {
+  * {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  * {
+    font-size: 12px;
+  }
+
+  .list-item {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  * {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Chivo"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Itim"
+    />
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="module">
+      const firebaseConfig = {
+        apiKey: "AIzaSyBG52n40d8z90AMHM2W8yz16YKEIyD9UFQ",
+        authDomain: "web-application-4a5e0.firebaseapp.com",
+        projectId: "web-application-4a5e0",
+        storageBucket: "web-application-4a5e0.appspot.com",
+        messagingSenderId: "942788281297",
+        appId: "1:942788281297:web:462f2a31f78661415f96f0",
+        measurementId: "G-M7MGWJPPJF",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <h1 class="heading">Welcome to Deans Office</h1>
+    <section id="list-container"></section>
+  </body>
+</html>
