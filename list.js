@@ -13,7 +13,7 @@ dbRef.orderBy("Time").onSnapshot((querySnapshot) => {
                     <div class="field"><p class="field-name">Name:</p><p class="field-content"> ${
                       doc.data().Name
                     }</p></div>
-                    <div class="field"><p class="field-name">Time:</p><p class="field-content"> ${
+                    <div class="field"><p class="field-name">Details:</p><p class="field-content"> ${
                       doc.data().Details
                     }</p></div>
                     <div class="field"><p class="field-name">Time:</p><p class="field-content"> ${
@@ -42,10 +42,12 @@ function deleteButtonOnclick() {
         .doc(`${parentId}`)
         .delete()
         .then(function () {
-          alert("Document successfully deleted!");
+          console.log("Document successfully deleted!");
         })
         .catch(function (error) {
-          alert("Error removing document: ", error);
+          console.log("Error removing document: ", error);
         });
     });
 }
+
+

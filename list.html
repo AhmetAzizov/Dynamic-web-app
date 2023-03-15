@@ -2,12 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Registration</title>
-    <link rel="stylesheet" href="index.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim" />
 
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="list.css" />
 
     <script type="module">
       const firebaseConfig = {
@@ -24,29 +29,10 @@
       firebase.initializeApp(firebaseConfig);
     </script>
 
-<script src="index.js" defer></script>
-
+    <script src="list.js" defer></script>
   </head>
   <body>
-    <div id="bg"></div>
-
-    <form action="list.html">
-      <div class="form-field">
-        <input class="form-content" id="name" type="text" placeholder="Name Surname" maxlength="30" required />
-      </div>
-
-      <div class="form-field">
-        <textarea class="form-content" id="details" type="text" placeholder="Details" required
-        ></textarea>
-      </div>
-
-      <div class="form-field">
-        <input class="form-content" id="time" type="time" required />
-      </div>
-
-      <div class="form-field">
-        <button class="btn" type="submit" onclick="registerButton()">Register</button>
-      </div>
-    </form>
+    <h1 class="heading">Welcome to Deans Office</h1>
+    <section id="list-container"></section>
   </body>
 </html>
