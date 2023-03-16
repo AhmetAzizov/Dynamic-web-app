@@ -16,11 +16,14 @@ function registerButton() {
     // details.setAttribute('value', details.value);
     // time.setAttribute('value', time.value);
 
-
     if(name == "" || details == "" || time == "") {
         alert("Empty input")
         return;
     }
+
+    document.getElementsByName("name")[0].value = "";
+    document.getElementsByName("details")[0].value = "";
+    document.getElementsByName("time")[0].value = "";
 
     dbRef
     .add({

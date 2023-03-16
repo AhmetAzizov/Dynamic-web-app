@@ -82,9 +82,32 @@ body {
   color: whitesmoke;
 }
 
+.return-button {
+  display: inline-block;
+  position: relative;
+  background-color: gray;
+  border: 4px inset black;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  margin: 2rem 0 4rem 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: 900;
+  font-size: 1.7rem;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.return-button:hover {
+  background-color: rgb(103, 61, 70);
+  color: gray;
+}
+
 .item-removed {
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transform: translateX(-100%);
+  transition: opacity 1s, transform 1s;
 }
 
 @media only screen and (max-width: 900px) {
