@@ -30,21 +30,15 @@
   <body>
     <div id="bg"></div>
 
-    <form >
-      <div class="form-field">
-        <input class="form-content" name="name" type="text" placeholder="Name Surname" maxlength="30"  />
-      </div>
-
-      <div class="form-field">
-        <textarea class="form-content" name="details" type="text" placeholder="Details" ></textarea>
-      </div>
-
-      <div class="form-field">
-        <input class="form-content" name="time" type="time"  />
-      </div>
-
-      <div class="form-field">
-        <button class="btn" type="button"  onclick="registerButton()">Register</button>
+    <div class="contact-form">
+      <div class="form-description">Registration</div>
+        <form class="form">
+        <div class="input-container"><i class="fas fa-user form-icon"></i><input class="form-name input" name="name" placeholder="Name" type="text" required></input></div>
+        <textarea class="form-message input" rows="6" maxlength="200" name="details" placeholder="Message (Max 200 characters)" required></textarea>
+        <div class="input-container"><input class="form-time input" name="time" placeholder="Email" type="time" required></input></div>
+        <button type="button" class="submit" onclick="registerButton()">Submit</button>
+      </form>
+  </div>
       </div>
     </form>
   </body>

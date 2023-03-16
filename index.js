@@ -17,11 +17,10 @@ function registerButton() {
     // time.setAttribute('value', time.value);
 
 
-    if(name == "" || details == "" || time == "") return;
-
-    alert(name + " " + details + " " + time)
-    console.log(firebase)
-
+    if(name == "" || details == "" || time == "") {
+        alert("Empty input")
+        return;
+    }
 
     dbRef
     .add({
@@ -30,11 +29,11 @@ function registerButton() {
         Time: time
     })
     .then((docRef) => {
-        alert("Registration made with ID: ", docRef.id);
+        console.log("Registration made with ID: ", docRef.id);
         window.location.href = "list.html";
     })
     .catch((error) => {
-        alert("Error adding document: ", error);
+        console.log("Error adding document: ", error);
     });
 
   }

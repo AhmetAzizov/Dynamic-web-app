@@ -1,0 +1,115 @@
+body {
+    background-color: rgb(176, 176, 176);
+}
+
+.contact-form {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translateX(50%) translateY(-50%);
+    max-width: 500px;
+    padding: 1rem;
+    background-color: rgb(91, 88, 88);
+    background-color: transparent;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 23px 7px rgb(0 0 0 / 75%);
+  }
+  
+  .form-description {
+    font-family: "Concert One", cursive;
+    background-color: transparent;
+    /* box-shadow: 0px 0px 30px 5px rgba(116, 116, 116, 0.75); */
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: inherit;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    width: 100%;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .input {
+    font-family: "Concert One", cursive;
+    background-color: transparent;
+    width: calc(100% - 5.5rem);
+    font-size: 2rem;
+    border-radius: 2rem;
+    padding: 1rem 1rem 1rem 4rem;
+    transition: box-shadow 0.5s;
+    border: 4px inset rgb(238, 102, 102);
+    -webkit-appearance: none;
+  }
+  
+  .input::placeholder {
+    font-family: "Concert One", cursive;
+    color: rgb(40, 40, 40);
+  }
+  
+  .form-message {
+    padding: 1.2rem;
+    resize: vertical;
+    width: auto;
+  }
+
+  .form-time {
+    width: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .input:focus {
+    -webkit-box-shadow: 10px 10px 36px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 36px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 36px 1px rgba(0, 0, 0, 0.75);
+    background-color: rgb(158, 158, 158);
+  }
+  
+  .form-icon {
+    position: absolute;
+    font-size: 2rem;
+    top: 1.5rem;
+    left: 1.2rem;
+  }
+  
+  .submit {
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    background-color: rgb(225, 252, 203);
+    opacity: 0.7;
+    border: 5px inset gray;
+  }
+  
+  .submit:hover {
+    background-color: #a4e2a4;
+  }
+
+  @media only screen and (max-width: 900px) {
+    * {
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    * {
+      font-size: 12px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    * {
+      font-size: 10px;
+    }
+  }
