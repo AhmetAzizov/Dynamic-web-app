@@ -8,6 +8,7 @@ body {
   top: 50%;
   transform: translateX(50%) translateY(-50%);
   max-width: 500px;
+  min-width: max-content;
   padding: 1rem;
   background-color: rgb(91, 88, 88);
   background-color: transparent;
@@ -62,8 +63,7 @@ body {
 }
 
 .form-time {
-  width: auto;
-  position: relative;
+  width: fit-content;
   left: 50%;
   transform: translateX(-50%);
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Registration</title>
     <link rel="stylesheet" href="index.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
@@ -35,7 +35,7 @@
         <form class="form">
         <div class="input-container"><i class="fas fa-user form-icon"></i><input class="form-name input" name="name" placeholder="Name" type="text" required></input></div>
         <textarea class="form-message input" rows="6" maxlength="200" name="details" placeholder="Message (Max 200 characters)" required></textarea>
-        <div class="input-container"><input class="form-time input" name="time" placeholder="Email" type="time" required></input></div>
+        <div class="input-container form-time"><i class="fas fa-clock form-icon"></i><input class="input" name="time" placeholder="Email" type="time" required></input></div>
         <button type="button" class="submit" onclick="registerButton()">Submit</button>
       </form>
   </div>
