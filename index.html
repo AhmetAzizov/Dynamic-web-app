@@ -30,22 +30,21 @@
   <body>
     <div id="bg"></div>
 
-    <form action="list.html">
+    <form >
       <div class="form-field">
-        <input class="form-content" id="name" type="text" placeholder="Name Surname" maxlength="30" required />
+        <input class="form-content" name="name" type="text" placeholder="Name Surname" maxlength="30"  />
       </div>
 
       <div class="form-field">
-        <textarea class="form-content" id="details" type="text" placeholder="Details" required
-        ></textarea>
+        <textarea class="form-content" name="details" type="text" placeholder="Details" ></textarea>
       </div>
 
       <div class="form-field">
-        <input class="form-content" id="time" type="time" required />
+        <input class="form-content" name="time" type="time"  />
       </div>
 
       <div class="form-field">
-        <button class="btn" type="submit" onclick="registerButton()">Register</button>
+        <button class="btn" type="button"  onclick="registerButton()">Register</button>
       </div>
     </form>
   </body>
