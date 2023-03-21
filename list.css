@@ -37,6 +37,15 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  transition: opacity 1s, transform 0.7s;
+}
+
+.new-item {
+  opacity: 0;
+}
+
+.list-item-visible {
+  opacity: 1;
 }
 
 .item-content {
@@ -107,7 +116,6 @@ body {
 .item-removed {
   opacity: 0;
   transform: translateX(-100%);
-  transition: opacity 1s, transform 1s;
 }
 
 @media only screen and (max-width: 900px) {

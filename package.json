@@ -1,0 +1,65 @@
+{
+  "name": "dynamic-web-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmetAzizov/Dynamic-web-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhmetAzizov/Dynamic-web-app/issues"
+  },
+  "homepage": "https://github.com/AhmetAzizov/Dynamic-web-app#readme",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "async_hooks": "^1.0.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "firebase": "^9.18.0",
+    "fs": "^0.0.1-security",
+    "google-auth-library": "^8.7.0",
+    "graceful-fs": "^4.2.11",
+    "gtoken": "^6.1.2",
+    "https-browserify": "^1.0.0",
+    "https-proxy-agent": "^5.0.1",
+    "lint": "^0.8.19",
+    "net": "^1.0.2",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "path-browserify": "^1.0.1",
+    "querystring": "^0.2.1",
+    "request": "^2.88.2",
+    "require": "^0.4.4",
+    "requirejs": "^2.3.6",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "teeny-request": "^8.0.3",
+    "tls": "^0.0.1",
+    "url": "^0.11.0",
+    "util": "^0.12.5",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "babelify": "^10.0.0",
+    "firebase-admin": "^11.5.0",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false,
+    "child_process": false,
+    "./zlib_bindings": false,
+    "./zlib_bindings.js": false,
+    "./zlib_bindings.wasm": false,
+    "./zlib_bindings.node": "zlib-browserify"
+  },
+  "description": ""
+}
